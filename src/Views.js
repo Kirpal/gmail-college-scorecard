@@ -123,6 +123,13 @@ function buildCollegeCard(opts) {
           )
         )
     )
+    .addCardAction(
+      CardService.newCardAction()
+        .setText("Report a Problem")
+        .setOpenLink(
+          createExternalLink_("https://github.com/kirpal/gmail-college-scorecard/issues/new")
+        )
+    )
     .addSection(
       CardService.newCardSection()
         .addWidget(
