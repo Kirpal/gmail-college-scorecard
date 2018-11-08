@@ -200,7 +200,7 @@ function buildCollegeCard(opts) {
       CardService.newCardSection()
         .setHeader("Admissions (Fall 2015)")
         .addWidget(
-          createKeyValue_("Admissions Rate", false, opts.admissionRate)
+          createKeyValue_("Acceptance Rate", false, opts.admissionRate)
         )
         .addWidget(createKeyValue_("SAT Middle 50%", false, opts.sat))
         .addWidget(createKeyValue_("ACT Middle 50%", false, opts.act))
