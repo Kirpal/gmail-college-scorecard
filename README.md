@@ -64,7 +64,7 @@ Deploy the add-on by following these steps:
 
 Note the deployment ids. There will be two deployments, one for the tagged
 version, another for the `@HEAD` version. Use the `@HEAD` deployment when
-installing the add on if you intend to modify or experiment with the code.
+installing the add-on if you intend to modify or experiment with the code.
 
 ## Configure API credentials
 
@@ -141,7 +141,7 @@ occur during the execution of the add-on.
 
 ## License
 
-This add on is licensed under the [MIT][license] license.
+This add-on is licensed under the [MIT][license] license.
 
 <!-- References -->
 [quickstart]:https://developers.google.com/gmail/add-ons/guides/quickstart
