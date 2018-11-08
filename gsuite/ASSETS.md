@@ -74,14 +74,14 @@ You can further enhance your application listing by providing the following URLs
 
 - [x] Application website URL. A link to a web site that describes your application. This is distinct from the above developer website URL, which is a page that describes you or your organization. *(https://github.com/kirpal/gmail-college-scorecard)*
 
-- [] YouTube video URL. A link to a YouTube video that describes your application and shows it in action.
+- [ ] YouTube video URL. A link to a YouTube video that describes your application and shows it in action.
 
-- [] Setup URL. A link to a web page that describes how to set up your application after it is first installed. Recommended if the application requires configuration that is hard to explain well within the application itself.
+- [ ] Setup URL. A link to a web page that describes how to set up your application after it is first installed. Recommended if the application requires configuration that is hard to explain well within the application itself.
 
-- [] Admin config URL. A link to a web page that tells domain administrators how to configure the application for use by their users. Unnecessary unless the application requires a domain-level configuration.
+- [ ] Admin config URL. A link to a web page that tells domain administrators how to configure the application for use by their users. Unnecessary unless the application requires a domain-level configuration.
 
 - [x] Support URL. A link to a web page that describes how your users can get support from you if they are having issues with the application. Recommended. *(https://github.com/kirpal/gmail-college-scorecard/issues)*
 
-- [] Deletion policy URL. A link to a web page that describes how and when your application deletes user data. Strongly recommended if the application collects and stores user data.
+- [ ] Deletion policy URL. A link to a web page that describes how and when your application deletes user data. Strongly recommended if the application collects and stores user data.
 
-- [] Product logo URL. A link to a hosted image logo to display on the application's OAuth consent screen. The image should be no larger than 120 x 120 pixels.
+- [ ] Product logo URL. A link to a hosted image logo to display on the application's OAuth consent screen. The image should be no larger than 120 x 120 pixels.
