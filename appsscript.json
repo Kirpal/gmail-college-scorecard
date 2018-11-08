@@ -1,0 +1,29 @@
+{
+  "timeZone": "America/New_York",
+  "exceptionLogging": "CLOUD",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "gmail": {
+    "name": "College Scorecard",
+    "logoUrl": "",
+    "contextualTriggers": [{
+      "unconditional": {
+      },
+      "onTriggerFunction": "getContextualAddOn"
+    }],
+    "openLinkUrlPrefixes": [
+        "*",
+        "https://google.com/maps",
+        "https://clearbit.com",
+        "https://github.com/kirpal/gmail-college-scorecard",
+        "https://collegescorecard.ed.gov/school/"
+    ],
+    "primaryColor": "#1e88e5"
+  },
+  "urlFetchWhitelist": [
+    "https://api.data.gov/ed/collegescorecard/v1/"
+  ]
+}
