@@ -116,7 +116,7 @@ function getCardData_(school) {
     id: school.id,
     url: school["school.school_url"],
     location: school["school.city"] + ", " + school["school.state"],
-    type: ["Other", "Public", "Private", "For Profit"][
+    type: ["Other", "Public", "Private", "<font color='#ff8888'><b>For Profit</b></font>"][
       school["school.ownership"]
     ],
     size: school["latest.student.size"]
