@@ -90,7 +90,7 @@ function buildCollegeCard(opts) {
     .setNumUncollapsibleWidgets(1)
     .addWidget(
       createKeyValue_(
-        "Undergraduate",
+        false,
         CardService.Icon.PERSON,
         "Race/Ethnicity:"
       )
