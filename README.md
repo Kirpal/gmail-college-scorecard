@@ -1,10 +1,11 @@
+
+![Screenshot](assets/screenshot1.png)
+
 # College Scorecard Gmail Add-on
 
 *Not on GSuite Store yet*
 
-This is a Gmail add-on that fetches information about colleges from emails they've sent to students. It is useful for quickly determining whether a given college is a good fit for a prospective student. Uses [College Scorecard][college_api] as the data source.
-
-![Screenshot](assets/screenshot1.png)
+The College Scorecard Gmail Add-on gives you quick information about a college right from Gmail. Just click the icon while opening college emails to easily view their scorecard information. Data sourced from [College Scorecard][college_api].
 
 ## Before you begin
 
