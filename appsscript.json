@@ -8,7 +8,7 @@
   ],
   "gmail": {
     "name": "College Scorecard",
-    "logoUrl": "",
+    "logoUrl": "https://github.com/Kirpal/gmail-college-scorecard/raw/master/assets/icon128.png",
     "contextualTriggers": [{
       "unconditional": {
       },
