@@ -1,4 +1,4 @@
-# College Scorecard Gmail Addon
+# College Scorecard Gmail Add-on
 
 *Not on GSuite Store yet*
 
@@ -19,17 +19,17 @@ This script requires the following:
 
 ## Downloading the project
 
-Download the addon and navigate into the addon directory:
+Download the add-on and navigate into the add-on directory:
 
-1.  Clone the [College scorecard gmail addon][github-repo], to your local
+1.  Clone the [add-on][github-repo] to your local
     machine:
 
         git clone https://github.com/kirpal/college-scorecard-gmail.git
 
-    Alternatively, you can [download the addon][github-zip] as a zip file and
+    Alternatively, you can [download the add-on][github-zip] as a zip file and
     extract it.
 
-2.  Change to the addon directory:
+2.  Change to the add-on directory:
 
         cd college-scorecard-gmail
 
@@ -148,10 +148,10 @@ This add on is licensed under the [MIT][license] license.
 [clasp]:https://github.com/google/clasp
 [apps-script]: https://script.google.com
 [github]: https://github.com
-[github-repo]: https://github.com/kirpal/college-scorecard-gmail
-[github-zip]: https://github.com/kirpal/college-scorecard-gmail/archive/master.zip
+[github-repo]: https://github.com/kirpal/gmail-college-scorecard
+[github-zip]: https://github.com/kirpal/gmail-college-scorecard/archive/master.zip
 [college_api]: https://collegescorecard.ed.gov/data/documentation/
 [mapquest_api]: https://developer.mapquest.com/documentation/
-[license]: https://github.com/kirpal/college-scorecard-gmail/blob/master/LICENSE
+[license]: https://github.com/kirpal/gmail-college-scorecard/blob/master/LICENSE
 [gmail-settings]: https://mail.google.com/mail/#settings/addons
 [gmail]: https://mail.google.com/

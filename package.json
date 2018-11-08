@@ -1,7 +1,7 @@
 {
   "name": "gmail-college-scorecard",
   "version": "1.0.0",
-  "description": "A Gmail addon for displaying information about a given college based on its emails.",
+  "description": "A Gmail add-on for displaying information about a given college based on its emails.",
   "scripts": {
     "lint": "jshint src/*.js",
     "format": "prettier --write src/*.js"
