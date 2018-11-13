@@ -70,6 +70,10 @@ function buildCollegeCard(opts) {
       Utilities.formatString("https://logo.clearbit.com/%s?size=32", opts.url)
     );
 
+  if (Object.keys(Data).indexOf(opts.id) != -1) {
+    header.setSubtitle(Utilities.formatString("%s in National Universities%s", Data[opts.id].rank, (Data[opts.id].tied) ? " (tie)" : ""));
+  }
+
   var studentsSection = CardService.newCardSection()
     .setHeader("Student Body")
     .addWidget(
@@ -103,6 +107,50 @@ function buildCollegeCard(opts) {
       )
     );
   });
+
+  var admissionSection = CardService.newCardSection();
+    
+  if (Object.keys(Data).indexOf(opts.id) != -1) {
+    admissionSection.setHeader("Admissions");
+
+    if (Data[opts.id].admissionRate) {
+      admissionSection
+        .addWidget(
+          createKeyValue_("Acceptance Rate", false, Data[opts.id].admissionRate)
+        );
+    } else {
+      admissionSection
+        .addWidget(
+          createKeyValue_("Acceptance Rate", false, opts.admissionRate)
+        )
+        .setHeader("Admissions (Fall 2015)");
+    }
+
+    if (Data[opts.id].sat) {
+      admissionSection.addWidget(createKeyValue_("SAT Middle 50%", false, Data[opts.id].sat));
+    } else {
+      admissionSection.addWidget(createKeyValue_("SAT Middle 50%", false, opts.sat))
+        .setHeader("Admissions (Fall 2015)");
+    }
+
+    if (Data[opts.id].act) {
+      admissionSection.addWidget(createKeyValue_("ACT Middle 50%", false, Data[opts.id].act));
+    } else {
+      admissionSection.addWidget(createKeyValue_("ACT Middle 50%", false, opts.act))
+      .setHeader("Admissions (Fall 2015)");
+    }
+
+    if (Data[opts.id].gpa) {
+      admissionSection.addWidget(createKeyValue_("Average GPA", false, Data[opts.id].gpa));
+    }
+  } else {
+      admissionSection.setHeader("Admissions (Fall 2015)")
+        .addWidget(
+          createKeyValue_("Acceptance Rate", false, opts.admissionRate)
+        )
+        .addWidget(createKeyValue_("SAT Middle 50%", false, opts.sat))
+        .addWidget(createKeyValue_("ACT Middle 50%", false, opts.act));
+  }
 
   var card = CardService.newCardBuilder()
     .setHeader(header)
@@ -203,15 +251,7 @@ function buildCollegeCard(opts) {
         )
     )
     .addSection(studentsSection)
-    .addSection(
-      CardService.newCardSection()
-        .setHeader("Admissions (Fall 2015)")
-        .addWidget(
-          createKeyValue_("Acceptance Rate", false, opts.admissionRate)
-        )
-        .addWidget(createKeyValue_("SAT Middle 50%", false, opts.sat))
-        .addWidget(createKeyValue_("ACT Middle 50%", false, opts.act))
-    )
+    .addSection(admissionSection)
     .addSection(
       CardService.newCardSection().addWidget(
         createKeyValue_(

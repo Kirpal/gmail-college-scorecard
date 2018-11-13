@@ -113,7 +113,7 @@ function queryApi_(query) {
 function getCardData_(school) {
   return {
     name: school["school.name"],
-    id: school.id,
+    id: school.id.toString(),
     url: school["school.school_url"],
     location: school["school.city"] + ", " + school["school.state"],
     type: ["Other", "Public", "Private", "<font color='#ff8888'><b>For Profit</b></font>"][
